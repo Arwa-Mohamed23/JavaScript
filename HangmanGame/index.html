@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HangmanGame</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="image/header.png" alt="header">
+    </header>
+    <main>
+        <section class="picktheme">
+            <header>
+                <h1>pick a theme</h1>
+            </header>
+            <section class="themes">
+                <div class="theme-button">Animals</div>
+                <div class="theme-button">Countries</div>
+                <div class="theme-button">Food</div>
+                <div class="theme-button">Movies</div>
+                <div class="theme-button">Colors</div>
+                <div class="theme-button">Jobs</div>
+            </section>
+        </section>
+
+        <section class="container">
+            <div class="hungman-box">
+                <img src="image/img1.png" alt="hungman-img">
+            </div>
+            <div class="game-box">
+                <ul class="word-display"></ul>
+                <h4 class="hint-text">
+                    <img src="image/hintImg.png" alt="hint">
+                    <b></b>
+                </h4>
+                <h4 class="timer">0:00</h4>
+                <div class="Keyboard"></div>
+            </div>
+        </section>
+
+        <section class="game-model"> 
+            <div class="content">
+                <h2></h2>
+                <p>Answer was...</p>
+                <p class="correct-word"></p>
+                <button class="play-again">Play Again</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

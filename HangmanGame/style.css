@@ -1,0 +1,200 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #c0f5f5;
+  }
+
+  header{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  main{
+    background-color: #048383;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .picktheme{
+    text-align: center;
+    padding: 2em;
+    /*display: none;*/
+  }
+  
+  h1{
+    font-size: 50px;
+    color: #c0f5f5;
+    margin: 1rem;
+  }
+  
+  .themes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+  }
+  
+  .theme-button {
+    font-size: 2em;
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid #045e5e;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+  }
+  
+  .theme-button:hover {
+    transform: scale(1.05);
+    background-color: #c0f5f5;
+  }
+  
+  .container{
+    gap: 70px;
+    align-items: center;
+    padding: 0 60px;
+    width: 700px;
+    display: none;
+  }
+
+  .hungman-box img{
+    max-width: 270px;
+  }
+
+  .word-display {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .word-display .letter{
+    width: 28px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #000;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #c0f5f5;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .word-display .letter.guessed{
+    border-color: transparent;
+    margin: -20px 0 25px;
+  }
+   
+  .hint-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hint-text img{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+  }
+
+  .hint-text b{
+    text-align: left;
+  }
+
+  .game-box h4{
+    color: #c0f5f5;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .game-box h4 b{
+    color: #000;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  .game-box .Keyboard{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .Keyboard button{
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    background: #c0f5f5;
+    text-transform: uppercase;
+    width:40px;
+  }
+
+  .Keyboard button:hover {
+    background-color: #048383;
+    color: white;
+    border: 1px solid #c0f5f5;
+  }
+
+  .Keyboard button[disabled]{
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  .game-model{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.8);
+    display: none;
+  }
+
+  .game-model .content{
+    text-align: center;
+    color: white;
+  }
+
+  .game-model h2{
+    font-weight: 800;
+    font-size: 5rem;
+    margin-bottom: 40px;
+  }
+
+  .game-model p{
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  .game-model button{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 30px;
+    padding: 12px 23px;
+    background: #048383;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
